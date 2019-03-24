@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+
+  <!--<meta property="og:url" content="http://mcard.barunnfamily.com/SB2744823?46da">-->
+  <meta property="og:title" content="상규♡현지 결혼합니다">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./src/images/1-min.jpeg">
+  <meta property="og:image:width" content="533">
+  <meta property="og:image:height" content="800">
+  <meta property="og:description" content="2019-06-22 토요일 오후 12시 30분">
+
+
+  <title>모바일 청첩장</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=61676666e15fbd542913d9487fba3eee"></script>
+</head>
+<body>
+  <div class="contents">
+    <div class="bg1">
+      <div class="img"></div>
+    </div>
+    <div class="bg2">
+      <div class="img"></div>
+    </div>
+
+    <section id="imageSection" class="image-section">
+    </section>
+
+    <div class="content">
+
+      <section class="names-section">
+        2019.06.22 SAT PM 12:30<br>
+        압구정 메종드비 B1 누벨메종홀
+      </section>
+
+      <section class="image-banner">
+        <img src="./src/images/2-1-min.jpeg" alt="">
+      </section>
+
+      <section class="text-section">
+        <p class="greeting">
+          하나의 인연으로 만난 두 사람이<br>
+          이제 새로운 가정을 이루는 약속을 하려합니다.<br>
+          인생의 희로애락을 함께하는<br>
+          든든한 동반자가 되겠습니다.<br>
+          오셔서 축복해 주시면<br>
+          큰 기쁨으로 간직하겠습니다.
+        </p>
+        <div class="parents">
+          <p class="line">
+            강진희 • 박현순<span class="of">의 장남</span> 상규
+            <a href="tel:010-3080-8802">
+              <img src="./src/images/phone_icon.svg" alt="" class="phone-img">
+            </a>
+          </p>
+          <p class="line">
+            장영인 • 이혜원<span class="of">의 장녀</span> 현지
+            <a href="tel:010-9071-8802">
+              <img src="./src/images/phone_icon.svg" alt="" class="phone-img">
+            </a>
+          </p>
+        </div>
+
+        <img src="./src/images/calendar.png" alt="" class="calendar">
+
+      </section>
+
+      <!--<p class="d-day-section">
+        상규와 현지의 결혼식이 100일 남았습니다
+      </p>-->
+
+      <div id="map" style="width:100vw;height:80vw;max-width:700px;max-height:600px;"></div>
+
+      <section class="address-section">
+        <!--2019년 6월 22일 토요일 오후 2시<br>-->
+        <b>압구정 메종드비 B1 누벨메종홀</b>
+        <br>
+        서울 강남구 논현로 842<br>
+        <span class="phone">02-3416-0020</span>
+        <a href="tel:02-3416-0020">
+          <img src="./src/images/phone_icon.png" alt="" class="phone-img">
+        </a>
+      </section>
+
+      <section class="traffic-info">
+        - 지하철<br>
+        압구정역 4번출구 -> 수협은행까지 직진 -> 수협은행 앞 횡단보도 건넌 후 CGV 방면 직진 -> 커피빈 건물 지하1층<br>
+        <br>
+        - 버스<br>
+        압구정역 3번 출구 (147, 148)<br>
+        압구정역 4번 출구 (147, 148, 240)<br>
+        <br>
+        - 주차장<br>
+        주차요원의 안내를 받아 지하 및 옥외주차장 이용<br>
+      </section>
+
+    </div>
+
+    <section class="image-section-bottom">
+    </section>
+
+
+    <!--<div style="height: 1000px; width: 100%"></div>-->
+  </div>
+
+  <script>
+  var container = document.getElementById('map') //지도를 담을 영역의 DOM 레퍼런스
+  var position = new daum.maps.LatLng(37.52422, 127.028955)
+  var options = { //지도를 생성할 때 필요한 기본 옵션
+    center: position, //지도의 중심좌표.
+    level: 2, //지도의 레벨(확대, 축소 정도)
+  }
+
+  var map = new daum.maps.Map(container, options) //지도 생성 및 객체 리턴
+
+  var imageSrc = './src/images/map-pointer.png', // 마커이미지의 주소입니다
+    imageSize = new daum.maps.Size(50, 50), // 마커이미지의 크기입니다
+    imageOption = { offset: new daum.maps.Point(20, 50) } // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+  // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+  var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption)
+
+  // 마커를 생성합니다
+  var marker = new daum.maps.Marker({
+    position: position,
+    image: markerImage,
+  })
+
+  // 마커가 지도 위에 표시되도록 설정합니다
+  marker.setMap(map)
+
+
+  </script>
+</body>
+</html>
