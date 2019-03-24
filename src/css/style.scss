@@ -39,7 +39,6 @@ body {
       height: 100%;
       margin: 0 auto;
       background: {
-        image: url(../../src/images/1-min.jpeg);
         size: 100%;
         position: center 0;
         repeat: no-repeat;
@@ -137,7 +136,7 @@ body {
   .image-section-bottom {
     position: relative;
     height: 66vw;
-    background: url(../../src/images/5-min.jpeg) no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     background-position-y: bottom;
