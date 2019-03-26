@@ -24,6 +24,7 @@ body {
   .content {
     background-color: #f3f3f3;
     line-height: 1.5;
+    padding-bottom: 2rem;
   }
 
   .bg1 {
@@ -81,6 +82,7 @@ body {
     .parents {
       border-top: 1px solid;
       margin: 2.4rem;
+      margin-bottom: 0;
       padding: 2.4rem 0;
       letter-spacing: 0.25rem;
       text-align: left;
@@ -100,6 +102,19 @@ body {
         }
       }
     }
+    .date-addr {
+      margin: 0 2.4rem;
+      padding: 0.9rem 0;
+      border: 1px solid;
+    }
+  }
+
+  .congratulations {
+    margin: 0 2.4rem;
+    padding: 0.5rem 0;
+    background-color: #080808;
+    color: #fff;
+    font-size: 1rem;
   }
 
   .d-day-section {
