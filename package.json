@@ -2,7 +2,7 @@
   "name": "wedding-invitations",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp && python -m SimpleHTTPServer 3000"
+    "start": "gulp"
   },
   "dependencies": {},
   "devDependencies": {
