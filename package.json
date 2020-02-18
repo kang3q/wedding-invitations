@@ -2,7 +2,8 @@
   "name": "wedding-invitations",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "web": "npx http-server -p 3000 -g -o --proxy http://127.0.0.1:3000?"
   },
   "dependencies": {},
   "devDependencies": {
